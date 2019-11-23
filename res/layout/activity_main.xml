@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    // From part of the screen
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:id="@+id/fromLayout"
+        android:paddingHorizontal="40dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FROM:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/from"
+        android:padding="10dp"/>
+     <Spinner
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/spinnerFrom"
+         android:padding="10dp"
+         android:layout_toRightOf="@id/from"/>
+     <EditText
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/fromInput"
+         android:inputType="numberDecimal"
+         android:textSize="20dp"
+         android:padding="10dp"
+         android:layout_toRightOf="@id/spinnerFrom"/>
+    </RelativeLayout>
+
+    // To part of the screen
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingHorizontal="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TO:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/to"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hrk"
+            android:textSize="20dp"
+            android:text="HRK"
+            android:padding="10dp"
+            android:layout_toRightOf="@id/to"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/result"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:layout_toRightOf="@id/hrk"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submitBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:text="SUBMIT"
+        android:textSize="20dp" />
+
+
+</LinearLayout>
